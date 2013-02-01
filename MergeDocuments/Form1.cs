@@ -16,12 +16,19 @@ namespace MergeDocuments
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void select_folder_button_Click(object sender, EventArgs e)
         {
-            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            if (docs_to_merge_folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Text = folderBrowserDialog1.SelectedPath;
+                folder_to_merge_textBox.Text = docs_to_merge_folderBrowserDialog.SelectedPath;
             }
         }
+
+        private void merge_button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

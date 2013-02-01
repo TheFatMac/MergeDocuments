@@ -28,44 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.docs_to_merge_folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.select_folder_button = new System.Windows.Forms.Button();
+            this.merge_button = new System.Windows.Forms.Button();
+            this.folder_to_merge_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // select_folder_button
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(419, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Select Folder";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.select_folder_button.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.select_folder_button.Location = new System.Drawing.Point(11, 63);
+            this.select_folder_button.Name = "select_folder_button";
+            this.select_folder_button.Size = new System.Drawing.Size(105, 32);
+            this.select_folder_button.TabIndex = 0;
+            this.select_folder_button.Text = "Select Folder";
+            this.select_folder_button.UseVisualStyleBackColor = true;
+            this.select_folder_button.Click += new System.EventHandler(this.select_folder_button_Click);
             // 
-            // button2
+            // merge_button
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(187, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(172, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Merge Documents";
-            this.button2.UseVisualStyleBackColor = true;
+            this.merge_button.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.merge_button.Location = new System.Drawing.Point(571, 63);
+            this.merge_button.Name = "merge_button";
+            this.merge_button.Size = new System.Drawing.Size(148, 32);
+            this.merge_button.TabIndex = 1;
+            this.merge_button.Text = "Merge Documents";
+            this.merge_button.UseVisualStyleBackColor = true;
+            this.merge_button.Click += new System.EventHandler(this.merge_button_Click);
             // 
-            // textBox1
+            // folder_to_merge_textBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(11, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(402, 26);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.WordWrap = false;
+            this.folder_to_merge_textBox.BackColor = System.Drawing.Color.White;
+            this.folder_to_merge_textBox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.folder_to_merge_textBox.Location = new System.Drawing.Point(11, 34);
+            this.folder_to_merge_textBox.Name = "folder_to_merge_textBox";
+            this.folder_to_merge_textBox.ReadOnly = true;
+            this.folder_to_merge_textBox.Size = new System.Drawing.Size(708, 22);
+            this.folder_to_merge_textBox.TabIndex = 2;
+            this.folder_to_merge_textBox.WordWrap = false;
             // 
             // label1
             // 
@@ -81,11 +82,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 139);
+            this.ClientSize = new System.Drawing.Size(731, 104);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.folder_to_merge_textBox);
+            this.Controls.Add(this.merge_button);
+            this.Controls.Add(this.select_folder_button);
             this.Name = "Form1";
             this.Text = "Merge Word Documents";
             this.ResumeLayout(false);
@@ -95,10 +96,10 @@
 
         #endregion
 
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FolderBrowserDialog docs_to_merge_folderBrowserDialog;
+        private System.Windows.Forms.Button select_folder_button;
+        private System.Windows.Forms.Button merge_button;
+        private System.Windows.Forms.TextBox folder_to_merge_textBox;
         private System.Windows.Forms.Label label1;
     }
 }
