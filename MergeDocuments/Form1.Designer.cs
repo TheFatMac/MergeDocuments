@@ -33,14 +33,16 @@
             this.merge_button = new System.Windows.Forms.Button();
             this.folder_to_merge_textBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.new_document_name_textBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // select_folder_button
             // 
-            this.select_folder_button.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.select_folder_button.Location = new System.Drawing.Point(11, 63);
+            this.select_folder_button.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.select_folder_button.Location = new System.Drawing.Point(605, 62);
             this.select_folder_button.Name = "select_folder_button";
-            this.select_folder_button.Size = new System.Drawing.Size(105, 32);
+            this.select_folder_button.Size = new System.Drawing.Size(130, 26);
             this.select_folder_button.TabIndex = 0;
             this.select_folder_button.Text = "Select Folder";
             this.select_folder_button.UseVisualStyleBackColor = true;
@@ -48,10 +50,10 @@
             // 
             // merge_button
             // 
-            this.merge_button.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.merge_button.Location = new System.Drawing.Point(571, 63);
+            this.merge_button.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.merge_button.Location = new System.Drawing.Point(311, 98);
             this.merge_button.Name = "merge_button";
-            this.merge_button.Size = new System.Drawing.Size(148, 32);
+            this.merge_button.Size = new System.Drawing.Size(130, 26);
             this.merge_button.TabIndex = 1;
             this.merge_button.Text = "Merge Documents";
             this.merge_button.UseVisualStyleBackColor = true;
@@ -64,7 +66,7 @@
             this.folder_to_merge_textBox.Location = new System.Drawing.Point(11, 34);
             this.folder_to_merge_textBox.Name = "folder_to_merge_textBox";
             this.folder_to_merge_textBox.ReadOnly = true;
-            this.folder_to_merge_textBox.Size = new System.Drawing.Size(708, 22);
+            this.folder_to_merge_textBox.Size = new System.Drawing.Size(724, 22);
             this.folder_to_merge_textBox.TabIndex = 2;
             this.folder_to_merge_textBox.WordWrap = false;
             // 
@@ -78,11 +80,33 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Folder with Documents to be merged:";
             // 
+            // new_document_name_textBox
+            // 
+            this.new_document_name_textBox.BackColor = System.Drawing.Color.White;
+            this.new_document_name_textBox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_document_name_textBox.Location = new System.Drawing.Point(11, 101);
+            this.new_document_name_textBox.Name = "new_document_name_textBox";
+            this.new_document_name_textBox.Size = new System.Drawing.Size(294, 22);
+            this.new_document_name_textBox.TabIndex = 4;
+            this.new_document_name_textBox.WordWrap = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(227, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Name for Merged Document:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 104);
+            this.ClientSize = new System.Drawing.Size(747, 138);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.new_document_name_textBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.folder_to_merge_textBox);
             this.Controls.Add(this.merge_button);
@@ -101,6 +125,8 @@
         private System.Windows.Forms.Button merge_button;
         private System.Windows.Forms.TextBox folder_to_merge_textBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox new_document_name_textBox;
+        private System.Windows.Forms.Label label2;
     }
 }
 
